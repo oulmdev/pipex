@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pipex.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: moulmoud <moulmoud@student.1337.ma>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/12 21:00:23 by moulmoud          #+#    #+#             */
+/*   Updated: 2022/12/12 21:00:24 by moulmoud         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 #include "pipex.h"
 
@@ -63,7 +75,7 @@ void	ft_pipex(t_pipex pipex, char **env)
 int main(int ac,char *av[], char *env[])
 {
 	t_pipex pipex;
-	
+
 	if (ac != 5)
 		return(perror(ARGS),0);
 	pipex.fdinput = open(av[1], O_RDONLY);
