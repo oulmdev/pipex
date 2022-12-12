@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 21:00:23 by moulmoud          #+#    #+#             */
-/*   Updated: 2022/12/12 21:00:24 by moulmoud         ###   ########.fr       */
+/*   Updated: 2022/12/12 21:20:04 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ t_pipex ft_getcmds(t_pipex pipex, char **av, char**env)
 			pipex.path = *env;
 		env++;
 	}
-	pipex.cmds1 = ft_split(av[2] ,' ');
+	pipex.cmds1 = ft_split(av[2], ' ');
 	pipex.cmds2 = ft_split(av[3], ' ');
 	pipex.cmd1 = ft_getcmd(pipex,pipex.cmds1);
 	pipex.cmd2 = ft_getcmd(pipex,pipex.cmds2);
@@ -64,7 +64,6 @@ void	ft_pipex(t_pipex pipex, char **env)
 	}
 	else
 	{
-		wait(NULL);
 		dup2(pipex.pip[0],0);
 		close(pipex.pip[1]);
 		dup2(pipex.fdoutput,1);
