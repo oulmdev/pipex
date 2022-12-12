@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 21:00:13 by moulmoud          #+#    #+#             */
-/*   Updated: 2022/12/12 21:03:51 by moulmoud         ###   ########.fr       */
+/*   Updated: 2022/12/12 21:05:33 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,6 @@ char *ft_substr(char *s, unsigned int start, size_t len)
 	str[j] = '\0';
 	return (str);
 }
+
+
+
