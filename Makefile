@@ -6,7 +6,7 @@
 #    By: moulmoud <moulmoud@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 21:00:33 by moulmoud          #+#    #+#              #
-#    Updated: 2022/12/12 21:00:34 by moulmoud         ###   ########.fr        #
+#    Updated: 2022/12/13 11:53:19 by moulmoud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = pipex
 
 COMPILER = gcc
 
-CFLAGS = -Wall -Wextra -Werror -g -std=c99
+CFLAGS = -Wall -Wextra -Werror
 
 CFILES = pipex.c ft_split.c ft_strlen.c ft_strchr.c ft_strstr.c \
 		ft_strjoin.c ft_substr.c
