@@ -1,0 +1,12 @@
+'{count++} END {print count}'
+"{count++} END {print count}"
+'"{count++} END {print count}"'
+"'{count++} END {print count}'"
+
+
+'             '                 ok
+"             "                 ok
+' "           " '               ok
+" '           ' "               ok
+
+

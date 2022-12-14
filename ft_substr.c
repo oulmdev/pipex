@@ -6,7 +6,7 @@
 /*   By: moulmoud <moulmoud@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 21:00:13 by moulmoud          #+#    #+#             */
-/*   Updated: 2022/12/12 21:06:05 by moulmoud         ###   ########.fr       */
+/*   Updated: 2022/12/14 01:58:01 by moulmoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ char *ft_substr(char *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	j;
 	char	*str;
-
+	if (s[start] == '\'' || s[start] == '"')
+		start++;
 	str = (char*)malloc(sizeof(*s) * (len + 1));
 	if (!str)
 		return (NULL);
